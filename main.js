@@ -1,23 +1,18 @@
-$(document).ready(function() {
-    $(window).scroll(function(event) {
-       var pos_body = $('html,body').scrollTop();
-    //    console.log(pos_body);
-       if(pos_body>=100){
-        document.getElementById('site-header').classList.add('header_fixed');
-       }
-       else {
-        document.getElementById('site-header').classList.remove('header_fixed')
-       }
-    });
- 
- });
-
-
 var checkbox_toggle = document.getElementById('checkbox');
 var x = document.getElementsByClassName('hanh');
 var y = document.getElementsByClassName('content-main');
 var z = document.getElementsByClassName('hanh2');
-{
+document.addEventListener("DOMContentLoaded", function(event) {
+    window.addEventListener('scroll', function () {
+        var pos_body = window.pageYOffset ;
+        console.log(pos_body);
+        if(pos_body>=100){
+         document.getElementById('site-header').classList.add('header_fixed');
+        }
+        else {
+         document.getElementById('site-header').classList.remove('header_fixed')
+        }
+     })
     checkbox_toggle.addEventListener('change', function () {
         document.body.classList.toggle('dark');
         if (checkbox_toggle.checked == true) {
@@ -75,5 +70,5 @@ var z = document.getElementsByClassName('hanh2');
             }
         }
     })
-}
+})
 
