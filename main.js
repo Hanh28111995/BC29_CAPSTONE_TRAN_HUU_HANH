@@ -2,6 +2,9 @@ var checkbox_toggle = document.getElementById('checkbox');
 var x = document.getElementsByClassName('hanh');
 var y = document.getElementsByClassName('content-main');
 var z = document.getElementsByClassName('hanh2');
+var e = document.getElementsByClassName('hanh3');
+var d = document.getElementsByClassName('hanh1');
+var f = document.getElementsByClassName('hanh4');
 document.addEventListener("DOMContentLoaded", function(event) {
     window.addEventListener('scroll', function () {
         var pos_body = window.pageYOffset ;
@@ -17,30 +20,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
         document.body.classList.toggle('dark');
         if (checkbox_toggle.checked == true) {
             document.getElementById('courses').classList.add('dark1');
-            document.getElementById('bg_sm').classList.add('dark2');
-            document.getElementById('bg_sm1').classList.add('dark4');
-            document.getElementById('bg_sm2').classList.add('dark4');
-            document.getElementById('bg_sm3').classList.add('dark4');
-            document.getElementById('bg_sm4').classList.add('dark4');
-            document.getElementById('bg_sm_sb').classList.add('dark2');
-            document.getElementById('decor_dropdown').classList.add('dark2');
-            document.getElementById('bg_icon1').classList.add('dark3');
-            document.getElementById('bg_icon2').classList.add('dark3');
-            document.getElementById('bg_icon3').classList.add('dark3');
+            document.getElementById('bg_sm').classList.add('dark1');
+            document.getElementById('bg_sm_sb').classList.add('dark1');
+            document.getElementById('decor_dropdown').classList.add('dark1');
             document.getElementById('site-header').classList.add('header_dark');
             document.getElementById('logo_name').classList.add('text_light');
         } else {
             document.getElementById('courses').classList.remove('dark1');
-            document.getElementById('bg_sm').classList.remove('dark2');
-            document.getElementById('bg_sm1').classList.remove('dark4');
-            document.getElementById('bg_sm2').classList.remove('dark4');
-            document.getElementById('bg_sm3').classList.remove('dark4');
-            document.getElementById('bg_sm4').classList.remove('dark4');
-            document.getElementById('bg_sm_sb').classList.remove('dark2');
-            document.getElementById('decor_dropdown').classList.remove('dark2');
-            document.getElementById('bg_icon1').classList.remove('dark3');
-            document.getElementById('bg_icon2').classList.remove('dark3');
-            document.getElementById('bg_icon3').classList.remove('dark3');
+            document.getElementById('bg_sm').classList.remove('dark1');
+            document.getElementById('bg_sm_sb').classList.remove('dark1');
+            document.getElementById('decor_dropdown').classList.remove('dark1');
             document.getElementById('site-header').classList.remove('header_dark');
             document.getElementById('logo_name').classList.remove('text_light');
         }
@@ -50,10 +39,19 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 x[i].classList.add('text_light');
             }
             for (var i = 0; i < y.length; i++) {
-                y[i].classList.add('hanh1');
+                y[i].classList.add('dark_border');
             }
             for (var i = 0; i < z.length; i++) {
                 z[i].classList.add('text_p');
+            }
+            for (var i = 0; i < e.length; i++) {
+                e[i].classList.add('shadow_dark');
+            }
+            for (var i = 0; i < d.length; i++) {
+                d[i].classList.add('dark');  
+            }
+            for (var i = 0; i < f.length; i++) {
+                f[i].classList.add('dark3');
             }
            
         }
@@ -63,10 +61,19 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 x[i].classList.add('text_dark');
             }
             for (var i = 0; i < y.length; i++) {
-                y[i].classList.remove('hanh1');
+                y[i].classList.remove('dark_border');
             }
             for (var i = 0; i < z.length; i++) {
                 z[i].classList.remove('text_p');
+            }
+            for (var i = 0; i < e.length; i++) {
+                e[i].classList.remove('shadow_dark');
+            }
+            for (var i = 0; i < d.length; i++) {
+                d[i].classList.remove('dark');
+            }
+            for (var i = 0; i < f.length; i++) {
+                f[i].classList.remove('dark3');
             }
         }
     })

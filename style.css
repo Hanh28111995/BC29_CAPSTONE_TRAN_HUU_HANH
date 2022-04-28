@@ -37,9 +37,21 @@ html {
     color: #b7b7b7 !important;
 }
 
-body.dark {
-    background: #161c2d;
+.dark {
+    background: #161c2d !important;
     transition: all 0.5s ease-in-out;
+}
+.dark1 {
+    background: #121725 !important;
+    transition: all 0.5s ease-in-out;
+}
+.dark3 {
+    background: rgb(168 176 195 / 11%) !important;
+    color: #4867b0 !important;
+}
+.shadow_dark
+{
+    box-shadow: 0 20px 62px hsla(222, 34%, 17%, 1) !important;
 }
 
 .header_dark {
@@ -606,7 +618,7 @@ button.search-btn {
 }
 
 
-.hanh1 {
+.dark_border {
     border: 1px solid rgba(255, 255, 255, 0.2) !important;
     background: transparent !important;
 }
@@ -632,24 +644,6 @@ button.search-btn {
 #courses {
     background: #f8f9ff;
     transition: all 0.5s ease-in-out;
-}
-
-.dark1 {
-    background: #121725 !important;
-    transition: all 0.5s ease-in-out;
-}
-
-.dark2 {
-    background: #161c2d !important;
-}
-
-.dark3 {
-    background: rgb(168 176 195 / 11%) !important;
-    color: #4867b0;
-}
-
-.dark4 {
-    background-color: #161c2d !important;
 }
 
 .dropdown-menu {
