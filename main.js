@@ -1,21 +1,21 @@
 var checkbox_toggle = document.getElementById('checkbox');
-var x = document.getElementsByClassName('hanh');
+var x = document.getElementsByClassName('text-basic-color');
 var y = document.getElementsByClassName('content-main');
-var z = document.getElementsByClassName('hanh2');
-var e = document.getElementsByClassName('hanh3');
-var d = document.getElementsByClassName('hanh1');
-var f = document.getElementsByClassName('hanh4');
-document.addEventListener("DOMContentLoaded", function(event) {
+var z = document.getElementsByClassName('text-basic-color2');
+var e = document.getElementsByClassName('text-basic-color3');
+var d = document.getElementsByClassName('text-basic-color1');
+var f = document.getElementsByClassName('text-basic-color4');
+document.addEventListener("DOMContentLoaded", function (event) {
     window.addEventListener('scroll', function () {
-        var pos_body = window.pageYOffset ;
-        console.log(pos_body);
-        if(pos_body>=100){
-         document.getElementById('site-header').classList.add('header_fixed');
+        var pos_body = window.pageYOffset;
+        // console.log(pos_body);
+        if (pos_body >= 100) {
+            document.getElementById('site-header').classList.add('header_fixed');
         }
         else {
-         document.getElementById('site-header').classList.remove('header_fixed')
+            document.getElementById('site-header').classList.remove('header_fixed')
         }
-     })
+    })
     checkbox_toggle.addEventListener('change', function () {
         document.body.classList.toggle('dark');
         if (checkbox_toggle.checked == true) {
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             document.getElementById('site-header').classList.remove('header_dark');
             document.getElementById('logo_name').classList.remove('text_light');
         }
-        if (checkbox_toggle.checked == true) {   
+        if (checkbox_toggle.checked == true) {
             for (var i = 0; i < x.length; i++) {
                 x[i].classList.remove('text_dark');
                 x[i].classList.add('text_light');
@@ -48,12 +48,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 e[i].classList.add('shadow_dark');
             }
             for (var i = 0; i < d.length; i++) {
-                d[i].classList.add('dark');  
+                d[i].classList.add('dark');
             }
             for (var i = 0; i < f.length; i++) {
                 f[i].classList.add('dark3');
             }
-           
+
         }
         else {
             for (var i = 0; i < x.length; i++) {
